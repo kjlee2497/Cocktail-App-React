@@ -46,6 +46,8 @@ import { useParams } from "react-router-dom"
 //     strMeasure15?: string,
 // }
 
+// TODO:  utilize Types in TS as DTOs for this portion of the code
+
 const RecipeDetails = () => {
     const id = useParams().toString();
 
