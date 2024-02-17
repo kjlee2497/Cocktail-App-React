@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import { Button } from "../ui/button"
+
 const PreviewCard = ( recipe : any ) => {
   return (
     <div className="preview-card">
@@ -8,7 +11,10 @@ const PreviewCard = ( recipe : any ) => {
             width={240}
             height={240}
         />
-        <p className="my-3">{recipe?.idDrink}</p>
+        <Link to={`/recipe/${recipe?.idDrink}`}>
+            <Button>Get Recipe</Button>
+        </Link>
+        {/* <p className="my-3">{recipe?.idDrink}</p> */}
     </div>
   )
 }
