@@ -1,20 +1,22 @@
 import { getRecipe } from "@/services/RecipeServices";
+import { Drink } from "@/types";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 
 // TODO:  utilize Types in TS as DTOs for this portion of the code
 
 const RecipeDetails = () => {
-    const id = useParams().toString();
+    const {id} = useParams();
+    const recipeId = id ?? 'defaultid';
 
-    const [recipe, setRecipe] = useState({});
+    const [recipe, setRecipe] = useState<Drink>();
     useEffect(()=> {
-        getRecipe(id).then(res=> {
-            if (!!res) {
+        getRecipe(recipeId).then(res=> {
+            if (res !== null) {
                 setRecipe(res);
-                console.log(recipe);
+                console.log(recipe?.idDrink);
             }
-        console.log(recipe);
+        // console.log(recipe);
         })
     }, [])
     
@@ -22,9 +24,9 @@ const RecipeDetails = () => {
   return (
     <div>
         <div>
-            {/* <p>{recipe[0].idDrink}</p>
-            <p>{recipe[0].strDrink}</p>
-            <img src={recipe[0]?.strDrinkThumb} alt="thumbnail" /> */}
+            <p>{recipe?.idDrink}</p>
+            <p>{recipe?.strDrink}</p>
+            <img src={recipe?.strDrinkThumb} alt="thumbnail" />
         </div>
     </div>
   )

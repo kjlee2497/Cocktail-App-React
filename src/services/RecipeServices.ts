@@ -5,15 +5,18 @@ const http = axios.create({
     baseURL: "https://www.thecocktaildb.com/api/json/v1/1/"
 });
 
-export async function getRecipe(id: string): Promise<Drink[]> {
+export async function getRecipe(id: string): Promise<Drink | null> {
     try {
         const response = await http.get(`/lookup.php?i=${id}`);
 
-        if (!response) throw Error;
-        return response.data.drinks; // Assuming response.data contains the actual drink data
+        if (!response || !response.data || !response.data.drinks || response.data.drinks.length === 0) {
+            throw Error('No drinks found');
+        }
+
+        return response.data.drinks[0];
     } catch (err) {
         console.log(err);
-        return [];
+        return null;
     }
 }
 
