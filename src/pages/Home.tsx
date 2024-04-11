@@ -44,7 +44,7 @@ populate a PreviewCard in SearchResults for every result
 TODO:  add a loader while results are loading
 TODO:  add infinite
 */}
-      <div className="mt-10 items-center">
+      <div className="results mt-10 items-center">
         <SearchResults recipes={recipes} />
       </div>
 

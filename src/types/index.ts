@@ -4,7 +4,7 @@ export type RecipeProps = {
     idDrink: string;
 }
 
-export type Drink {
+export type Drink = {
     idDrink?: string;
     strDrink?: string;
     strDrinkAlternate?: string | null;
@@ -47,4 +47,5 @@ export type Drink {
     strMeasure8?: string | null;
     strMeasure9?: string | null;
     strMeasure10?: string | null;
-    strMeasure11?: string |
+    strMeasure11?: string | null;
+}

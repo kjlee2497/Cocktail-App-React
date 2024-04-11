@@ -86,22 +86,85 @@
 }
 
 .main-container {
-  @apply flex flex-col
+  @apply flex flex-col;
+  width: 100%;
+  height: 100%;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 430%;
   color: var(--forestgreen);
   font-weight: 600;
 }
 
 .preview-card {
   background-color: var(--beige);
-  padding: 0px 40px;
+  padding: 0px 1.75%;
   border-radius: 10%;
 }
 
 .preview-card img {
   border-radius: 10%;
   padding: 0px 20px;
+}
+
+.preview-button {
+  margin: 2% auto;
+}
+
+.RecipeCard {
+  font-family: 'Times New Roman', Times, serif;
+  width: fit-content;
+  height: auto;
+  min-width: 20%;
+  max-width: 40%;
+  max-height: 80%;
+  background-color: var(--beige);
+  border: 2px solid var(--lightgreen);
+  border-radius: 7%;
+  text-align: left;
+  padding: 1.5% 2% 1.5%;
+
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.recipe-name {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 170%;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+  text-align: center;
+  width: auto;
+  max-width: 80%;
+  margin: 0% auto;
+}
+
+.lists {
+  font-size: 90%;
+  font-style: italic;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  margin: 5% auto;
+}
+
+.measurements {
+  margin: auto;
+  margin-right: 1%;
+}
+
+.ingredients {
+  margin: auto;
+  margin-left: 1%;
+}
+
+.instructions {
+  margin: auto;
+  text-align: center;
+  max-width: 90%;
+}
+
+.results {
+  margin: 2% 2%;
 }
