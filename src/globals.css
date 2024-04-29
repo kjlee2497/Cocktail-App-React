@@ -94,18 +94,37 @@
 .title {
   font-size: 430%;
   color: var(--forestgreen);
-  font-weight: 600;
+  font-weight: 700;
+  margin-top: 3.8%;
+  margin-bottom: 1.5%;
 }
 
 .preview-card {
   background-color: var(--beige);
   padding: 0px 1.75%;
   border-radius: 10%;
+  max-width: 20%;
+  max-height: 20%;
 }
 
-.preview-card img {
-  border-radius: 10%;
+.preview-card h2{
+  font-weight: 500;
+  font-size: 125%;
+  max-width: 100%;
+}
+
+.thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.thumbnail img {
   padding: 0px 20px;
+  border-radius: 20%;
+  max-width: 150%;
+  max-height: 150%;
 }
 
 .preview-button {
@@ -166,5 +185,5 @@
 }
 
 .results {
-  margin: 2% 2%;
+  
 }

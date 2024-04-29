@@ -22,7 +22,7 @@ const Home = () => {
     <div className="flex flex-col w-full h-full">
 
       <div className="main-container items-center">
-        <h1 className="title mt-3">Title/Logo</h1>
+        <h1 className="title mt-3">Happy Hour</h1>
           <div className="flex w-full max-w-sm items-center space-x-2">
             <Input 
               type="text"
