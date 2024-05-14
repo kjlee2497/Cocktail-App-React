@@ -78,7 +78,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url(@/src\assets\WoodBoard2.jpg);
+    background-image: url(../src\assets\WoodBoard2.jpg);
     background-repeat: repeat;
     background-position: center center;
     background-size: cover;
@@ -92,11 +92,12 @@
 }
 
 .title {
-  font-size: 430%;
+  font-size: 480%;
   color: var(--forestgreen);
   font-weight: 700;
   margin-top: 3.8%;
   margin-bottom: 1.5%;
+  font-style: italic;
 }
 
 .preview-card {
@@ -111,7 +112,7 @@
   font-weight: 500;
   font-size: 125%;
   max-width: 100%;
-  text-wrap: wrap;
+  text-wrap: nowrap;
 }
 
 .thumbnail {
