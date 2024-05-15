@@ -1,7 +1,6 @@
 import { getIngredients, getMeasurements } from "@/services/Functions";
 import { getRecipe } from "@/services/RecipeServices";
 import { Drink } from "@/types";
-import { get } from "node_modules/axios/index.d.cts";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 

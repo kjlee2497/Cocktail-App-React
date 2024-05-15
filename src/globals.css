@@ -78,7 +78,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: url(../src\assets\WoodBoard2.jpg);
+    background-image: url(../public/assets/WoodBoard2.jpg);
     background-repeat: repeat;
     background-position: center center;
     background-size: cover;
